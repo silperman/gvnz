@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="css/estilos.css">
+      <title>Painel de Propostas | GVNZ</title>
+  </head>
+  <body class="bg-light">    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand ps-3 me-md-5" href="home.html"> <img src="assets/img/logo-gvillani-navarro.png" width="240" height="auto" alt="logtipo Galvão Villani Navarro"></a>
+        <div>
+          <span class="text-light me-5 fst-italic small">Bem-vindo (usuário).</span>
+          <a href="login.html" class="btn btn-outline-light" ><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container corpo-proposta mb-5" style="padding-top:40px;">
+      <div class="row justify-content-center p-3">
+        <div class="col py-3">
+          <h1 class="border-bottom mb-5">Desconto Solidário</h1>
+          <p>Nós acreditamos que os maiores problemas do nosso país podem ser resolvidos reduzindo a desigualdade social e dando mais oportunidades a todos e todas que aqui vivem.</p>
+          <p>Obviamente, os grandes responsáveis por fazer o que precisa ser feito são nossos governantes, nas esferas federal, estadual e municipal. Isso, contudo, não impede que façamos um pouco mais.</p>              
+          <p>O escritório acredita que os maiores vetores de transformação em nossa sociedade são a educação e a preservação ambiental, motivo pelo qual elegemos três projetos que poderão, neste momento, ser beneficiados por meio do projeto "Desconto Solidário".</p>
+          <p>Basicamente, o "Desconto Solidário" prevê um desconto de 15% nos honorários apresentados anteriormente, o qual poderá ser, total ou parcialmente, doado por V. Sa. para uma das instituições participantes.</p>
+          <p>Para participar, basta escolher o percentual a ser doado (do desconto oferecido pelo escritório), a instituição que será beneficiada e se a doação será feita por V. Sa. ou pelo escritório, conforme passo a passo abaixo.</p>
+        </div>
+        <div class="row rounded p-4">
+          <div class="col-md-4 mb-3">
+            <a href="http://edireitogv.com.br/?page_id=188" target="_blank" class="btn btn-outline-dark p-3 w-100 shadow">
+              <h4>Endowment FGV Direito</h4>
+              <span>Conhecer</span>            
+            </a>
+          </div>
+          <div class="col-md-4 mb-3">
+            <a href="https://www.insper.edu.br/programadebolsas/" target="_blank" class="btn btn-outline-dark p-3 w-100 shadow">
+              <h4>Programa de bolsas Insper</h4>
+              <span>Conhecer</span>            
+            </a>
+          </div>
+          <div class="col-md-4 mb-5">
+            <a href="http://kkl.org.br" target="_blank" class="btn btn-outline-dark p-3 w-100 shadow">
+              <h4>KKL Brasil</h4>
+              <span>Conhecer</span>            
+            </a>
+          </div>
+        </div>
+
+        <div class="descontos bg-white p-5 border rounded">
+          <h4 class="mb-3">Definir doação:</h4>
+          <form action="">
+            <div class="row gap-4 px-2">
+              <div class="col border rounded p-3">
+                <h5 class="mb-3">Quanto doar do meu descontro:</h5>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="radio" name="descontoProjetoSocial" id="procentagem15">
+                  <label class="form-check-label" for="procentagem15">15%</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="radio" name="descontoProjetoSocial" id="procentagem25">
+                  <label class="form-check-label" for="procentagem25">25%</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="radio" name="descontoProjetoSocial" id="procentagem50">
+                  <label class="form-check-label" for="procentagem50">50%</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="radio" name="descontoProjetoSocial" id="procentagem75">
+                  <label class="form-check-label" for="procentagem75">75%</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="radio" name="descontoProjetoSocial" id="procentagem100">
+                  <label class="form-check-label" for="procentagem100">100%</label>
+                </div>
+              </div>
+              <div class="col border rounded p-3">
+                <h5 class="mb-3">Selecione o Projeto Social beneficiado:</h5>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="radio" name="qualProjetoSocial" id="projetoSocial1">
+                  <label class="form-check-label" for="projetoSocial1">Endowment FGV Direito</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="radio" name="qualProjetoSocial" id="projetoSocial2">
+                  <label class="form-check-label" for="projetoSocial2">Programa de bolsas Insper</label>
+                </div>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="radio" name="qualProjetoSocial" id="projetoSocial3">
+                  <label class="form-check-label" for="projetoSocial3">KKL Brasil</label>
+                </div>
+              </div>
+              <div class="col border rounded p-3">
+                <h5 class="mb-3">Como será debitado o desconto:</h5>
+                <div class="form-check form-switch mb-3">
+                  <input class="form-check-input" type="radio" name="comoDebitar" id="clientePagaDireto" autocomplete="off">
+                  <label class="form-check-label" for="clientePagaDireto">Eu pago diretamente.</label>
+                </div>
+                <div class="form-check form-switch mb-3">
+                  <input class="form-check-input" type="radio" name="comoDebitar" id="gvnPaga" autocomplete="off">
+                  <label class="form-check-label" for="gvnPaga">Galvão Villani Navarro paga</label>
+                </div>
+              </div>
+            </div>
+            <div class="col mt-4 d-flex justify-content-center flex-wrap gap-3">
+              <a type="button" class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#popupRecusaContraproposta">Declinar</a>
+              <a type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#popupAceite">Confirmar Doação</a>
+            </div>
+          </form>
+        </div>
+      </div>      
+  </main><!-- /.container -->
+
+  <footer class="bg-dark text-muted py-3">
+    <div class="d-flex justify-content-between gap-2 px-3 px-md-5">
+      <p class="fw-lighter mb-1 small">&copy;2020 Galvão Villani Navarro Advogados. Todos os direitos reservados. </p>
+      <a class="btn btn-outline-light" href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- modal contraproposta -->
+  <div class="modal fade" id="popupRecusaContraproposta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="alertaContraproposta" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="alertaContraproposta">Desistiu? Gostaria de fazer-nos uma contraproposta?</h5>
+          <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+        </div>
+        <div class="modal-body">
+          <p>Ao decidir fazer uma contraproposta você será direcionado a nossa área de contato.</p>
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn btn-secondary" href="index.html">Desistir da contraproposta</a>
+          <a type="button" class="btn btn-warning" href="contato.html">Enviar contraproposta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal Proposta aceita -->
+  <div class="modal fade" id="popupAceite" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="alertaAceitaProposta" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="alertaAceitaProposta">Confirmar Doação!</h5>
+          <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+        </div>
+        <div class="modal-body">
+          <p>Será doado XX% de seu desconto, para o projeto social XYZ, pago por XXY.</p>
+          <p>Ao confirmar, esta doação será adicionada à cláusula Desconto em sua proposta.</p>
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Alterar</a>
+          <a type="button" class="btn btn-warning" href="demo.html">Confirmar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="js/scripts-gvnz.js"></script>
+</body>
+</html>

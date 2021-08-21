@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="css/estilos.css">
+      <title>Painel de Propostas | GVNZ</title>
+  </head>
+  <body class="bg-light">    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand ps-3 me-md-5" href="home.html"> <img src="assets/img/logo-gvillani-navarro.png" width="240" height="auto" alt="logtipo Galvão Villani Navarro"></a>
+        <div>
+          <span class="text-light me-5 fst-italic small">Bem-vindo (usuário).</span>
+          <a href="login.html" class="btn btn-outline-light" ><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container corpo-proposta mt-5" style="padding-top:40px;">
+      <div class="row justify-content-center pt-5 pt-md-0 border bg-white">
+        <div class="col-10 p-md-5">
+          <!-- Deve entrar header do documento (logotipo) -->
+          <p class="text-end">São Paulo, 17 de junho de 2021</p>
+          <p class="text-uppercase">À</p>
+          <p class="h5 fw-bold text-uppercase mb-0">Nome da empresa</p>
+          <p class="fst-italic mb-5">Entregue por email para email@emaildocliente.com</p>
+          <p class="mb-5">Ref: <span class="h4 text-uppercase">Título da proposta</span></p>
+
+          <p>Prezados Senhores,</p>        
+          <p>Atendendo à solicitação de V.Sa., apresentamos nossa Proposta de Prestação de Serviços Profissionais de consultoria tributária, conforme melhor detalhado a seguir.</p>       
+          <h3 class="h5 fw-bold text-uppercase mt-5">I – Escopo dos nossos serviços</h3>      
+          <p>O escopo da presente proposta é a elaboração de uma planilha comparando a tributação da venda de um único produto, por Minas Gerais, São Paulo ou Santa Catarina.</p>        
+          <p>Estão incluídos, neste escopo, dois calls para apresentação do trabalho e realização de eventuais ajustes necessários.</p>
+
+          <!-- Bloco dinâmico -->
+          <!-- Este bloco é escolhido na criação da proposta em Honorários Advocatício -->
+          <div class="bloco-honorarios">
+            <h3 class="h5 fw-bold text-uppercase mt-5">II – Honorários Advocatícios</h3>
+            <p>Nossos honorários de consultivo tributário são normalmente cobrados com base nas horas efetivamente despendidas por cada profissional envolvido no projeto, de acordo com tabela abaixo:</p>
+            <table class="table mb-5">
+              <thead>
+                <tr>
+                  <th scope="col">Profissional</th>
+                  <th scope="col">Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                  <td>Sócio / Consultor</td>
+                  <td>R$900,00</td>
+                </tr>
+                <tr scope="row">
+                  <td>Advogado Sênior</td>
+                  <td>R$700,00</td>
+                </tr>
+                <tr scope="row">
+                  <td>Advogado Pleno</td>
+                  <td>R$600,00</td>
+                </tr>
+                <tr scope="row">
+                  <td>Advogado Júnior</td>
+                  <td>R$500,00</td>
+                </tr>
+                <tr scope="row">
+                  <td>Estagiário</td>
+                  <td>R$300,00</td>
+                </tr>
+                <tr scope="row">
+                  <td>Hora Única</td>
+                  <td>R$650,00</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Contudo, para dar maior previsibilidade à presente contratação, propomos a fixação de um teto de 13 horas. Dessa forma, caso as horas trabalhadas não atinjam o limite acima indicado, cobraremos tão somente as horas efetivamente incorridas por nossa equipe. Ao contrário, se as horas ultrapassarem o cap estabelecido, o escritório assumirá as horas excedentes e faturará tão somente as horas acordadas.</p>
+          </div>
+          <!-- Entra cláusula de Desconto -->
+          <!-- III - Do Desconto -->
+
+          <p>Eventuais despesas necessárias ao desenvolvimento do trabalho serão cobradas à parte de V.Sa., mediante a apresentação de Notas de Débitos.</p>
+          <p>Caso esteja de acordo com os termos da proposta acima, pedimos que nos retorne o documento com o seu “De acordo” abaixo. </p>
+          <p>Qualquer dúvida ou comentário, permaneço à disposição.</p>
+          <p>Abraços,</p>
+          <p class="fw-bold text-uppercase mb-5">Carlos Navarro</p>
+          <div class="col-md-6">
+            <p class="mb-5">De acordo,</p>
+            <form action="">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Nome completo" aria-label="Nome completo" aria-describedby="botaoDeAcordo">
+                <button class="btn btn-outline-dark" type="button" id="botaoDeAcordo">Concordo</button>
+              </div>
+            </form>
+            <p class="fw-bold text-uppercase border-top mt-1">Aqui vai o Nome da Empresa</p>
+          </div>
+          <!-- Deve entrar footer do documento (endereço) -->
+        </div>    
+        
+      </div>
+
+      <div class="py-5 mb-5 d-flex justify-content-center flex-wrap flex-md-nowrap">
+        <a type="button" class="btn btn-outline-secondary btn-lg mx-3" data-bs-toggle="modal" data-bs-target="#popupContraproposta">Não aceito</a>
+        <a type="button" class="btn btn-warning btn-lg mx-3" data-bs-toggle="modal" data-bs-target="#popupAceite">Aceito a Proposta</a>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-muted py-3">
+      <div class="d-flex justify-content-between gap-2 px-3 px-md-5">
+        <p class="fw-lighter mb-1 small">&copy;2020 Galvão Villani Navarro Advogados. Todos os direitos reservados. </p>
+        <a class="btn btn-outline-light" href="#"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    </footer>
+
+  <!-- modal contraproposta -->
+    <div class="modal fade" id="popupContraproposta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="alertaContraproposta" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="alertaContraproposta">Gostaria de ver um contraproposta?</h5>
+            <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Till hardware. Each weekend a lot of peanut. Malesuada relay was so ugly. Stress ipsum pull it always takes put a foot.<br>Donec nec justo eget felis facilisis fermentum. The latest innovative design that indoor air quality. Jasmine soccer kids football.</p>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não tenho interesse</a>
+            <a type="button" class="btn btn-warning" href="contraproposta.html">Sim, quero ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal Proposta aceita -->
+    <div class="modal fade" id="popupAceite" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="alertaAceitaProposta" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="alertaAceitaProposta">Proposta aceita!</h5>
+            <a type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+          </div>
+          <div class="modal-body">            
+            <p>A proposta será enviada para o email "email@emaildocliente.com.br" no formato PDF.</p>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</a>
+            <a type="button" class="btn btn-warning" data-bs-dismiss="modal">Enviar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts-gvnz.js"></script>
+  </body>
+</html>
